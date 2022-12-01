@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css?" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Home page | Bolivar Park Secondary</title>
+  </head>
+
+  <body>
+    <header>
+      <img
+        class="logo-image"
+        src="images/SurreyLogo.png"
+        alt="The BC Hydro logo"
+      />
+      <a
+        class="logo-text"
+        href="/BolivarParkSecondary/"
+        style="margin-left: 70px; margin-top: 6px; font-size: 1.5rem"
+      >
+        <span style="color: rgb(66, 66, 66)">Bolivar Park Secondary</span>
+      </a>
+      <div class="menu-button-container">
+        <a class="menu-button" href="/BolivarParkSecondary/">HOME</a>
+        <a class="menu-button" href="https://www.surrey.ca/" target="_blank"
+          >ABOUT</a
+        >
+        <a
+          class="menu-button"
+          href="https://github.com/LikelyNot/BolivarParkSecondary"
+          target="_blank"
+          >GITHUB</a
+        >
+      </div>
+    </header>
+    <div class="banner">
+      <div
+        class="menu-button-container"
+        style="padding: 20px; margin-left: 10px; gap: 1rem"
+      >
+        <button
+          id="overview-button"
+          class="banner-button selected"
+          onclick="hideLayer('elements-of-form-and-style'); hideLayer('interviews'); hideLayer('quizzes'); hideLayer('politics'); hideLayer('conclusion');showLayer('overview')"
+        >
+          Overview
+        </button>
+        <button
+          id="elements-of-form-and-style-button"
+          class="banner-button unselected"
+          onclick="hideLayer('overview'); hideLayer('interviews'); hideLayer('quizzes'); hideLayer('politics'); hideLayer('social'); hideLayer('conclusion');showLayer('elements-of-form-and-style')"
+        >
+          Geography
+        </button>
+        <button
+          id="interviews-button"
+          class="banner-button unselected"
+          onclick="hideLayer('overview'); hideLayer('elements-of-form-and-style'); hideLayer('politics'); hideLayer('social');hideLayer('conclusion'); hideLayer('quizzes'); showLayer('interviews')"
+        >
+          Environment
+        </button>
+        <button
+          id="quizzes-button"
+          class="banner-button unselected"
+          onclick="hideLayer('overview'); hideLayer('elements-of-form-and-style'); hideLayer('politics');hideLayer('social'); hideLayer('conclusion');hideLayer('interviews'); showLayer('quizzes')"
+        >
+          Economy
+        </button>
+        <button
+          id="politics-button"
+          class="banner-button unselected"
+          onclick="hideLayer('overview'); hideLayer('elements-of-form-and-style'); hideLayer('interviews'); hideLayer('social'); hideLayer('conclusion');hideLayer('quizzes'); showLayer('politics')"
+        >
+          Political
+        </button>
+        <button
+          id="social-button"
+          class="banner-button unselected"
+          onclick="hideLayer('overview'); hideLayer('elements-of-form-and-style'); hideLayer('interviews'); hideLayer('quizzes'); hideLayer('politics'); hideLayer('conclusion'); showLayer('social')"
+        >
+          Social
+        </button>
+        <button
+          id="conclusion-button"
+          class="banner-button unselected"
+          onclick="hideLayer('overview'); hideLayer('elements-of-form-and-style'); hideLayer('interviews'); hideLayer('quizzes'); hideLayer('politics'); hideLayer('social'), showLayer('conclusion')"
+        >
+          Conclusion
+        </button>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div id="overview">
+        <h1 class="content-title">OVERVIEW</h1>
+        <h2>Introduction</h2>
+        <p class="content-text">
+          The City of Surrey has opened a project to construct Bolivar Park
+          Secondary, a new secondary school that will be on the current land of
+          Bolivar Park, Surrey, BC. It will be the only major secondary school
+          in the area, and will provide high-quality, accessible education for
+          this large part of North Surrey. As one of the few major secondary
+          school projects presented to the City of Surrey as of late, various
+          building proposals and site selections have been made. A detailed
+          analysis of the two major building proposals and the final conclusion
+          are shown on this website.
+        </p>
+        <h2>Site A: Bolivar Park</h2>
+        <img
+          src="/images/Bolivar.png"
+          alt="A Google Earth image of a park"
+          style="width: 50%"
+        />
+        <p>
+          Highlighted in red, this potential site for a secondary school has
+          been conclusively selected to be the construction site. Bolivar Park
+          Secondary, in the below site, has shown to be the most promising
+          proposal.
+        </p>
+        <h2>Site B: 168 Street & 20th Ave Area</h2>
+        <img
+          src="/images/One-sixty-eight.png"
+          alt="A Google Earth image of streets"
+          style="width: 50%"
+        />
+        <p>
+          The second major site, the proposed areas are shown highlighted in
+          red. Despite showing other promising qualities, ultimately, Bolivar
+          Park was chosen over this site from our analysis. The report is linked
+          among the other tabs.
+        </p>
+      </div>
+      <div id="elements-of-form-and-style" style="display: none">
+        <h1 class="content-title">GEOGRAPHY</h1>
+        <h2>Geographical analysis</h2>
+        <p>
+          The City of Surrey has conducted an analysis of the geographical
+          factors concerning the two proposed sites.
+        </p>
+        <h2>Site A (Bolivar Park) Details</h2>
+        <ul>
+          <li>Address: 13591 Crestview Drive, Surrey BC</li>
+          <li>
+            Large area with many different activity sites including multiple
+            baseball fields, a field house and washroom building, playground,
+            and many picnic tables
+          </li>
+          <li>
+            In the south and east part of the park there is a large forested
+            area with multiple forest trails
+          </li>
+          <li>
+            Some of these areas offer highly esteemed views of New Westminster
+            and the Fraser River
+          </li>
+          <li>
+            Includes a two-acre fenced dog off-leash area - mostly open field
+            grass
+          </li>
+        </ul>
+        <img
+          src="/images/Bolivar2.png"
+          alt="An image of a park"
+          style="width: 50%"
+        />
+        <p>
+          Bolivar Park is an extremely large area with a large amount of empty
+          space, and large swaths of forested plains. Construction sites are
+          optimal in many of these areas geographically.
+        </p>
+        <h2>Site B (168 Street & 20th Ave Area) Details</h2>
+        <ul>
+          <li>
+            This intersection is unique in that this is the only intersection of
+            two roads in the surrounding area
+          </li>
+          <li>This area is rather sparse in terms of roads</li>
+          <li>
+            Mostly residential housing, with large farmland plains in between,
+            suitable for construction
+          </li>
+          <li>
+            Streets criss-cross to form an extremely large plain in the middle
+          </li>
+        </ul>
+        <img
+          src="/images/One-sixty-eight2.png"
+          alt="An image of a field"
+          style="width: 50%"
+        />
+        <p>
+          This specific area surrounding the intersection of 168 Street & 20th
+          Ave is mostly residential area. However, there are large plains that
+          are suitable for construction, so there are no major issues in this
+          factor.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Both sites feature suitable areas for construction. Geographically,
+          both sites are also fairly well-suited for demolition and the
+          following processes, so no large concerns arise here.
+        </p>
+      </div>
+      <div id="interviews" style="display: none">
+        <h1 class="content-title">ENVIRONMENT</h1>
+        <h2>Site A (Bolivar Park) Details</h2>
+        <p>
+          Cutting a large amount of area out for a school will significantly
+          impact the environment surrounding Bolivar Park. Since each park site
+          is interconnected tightly, many areas offering a combination of two
+          different sites, building a school in this site will completely remove
+          large swaths of multiple sites. The only open grasslands are the dog
+          park and the large forested area. The forested area will have to be
+          cut down in order to build a school here, which will significantly
+          impact the views of the surrounding environment and cause damage to
+          the forest and nearby nature. Many of the park's amenities are
+          connected to each other through the large swath of open land that is
+          the dog park, so interfering with the dog park will negatively disrupt
+          the environment surrounding the other sites as well.
+        </p>
+        <h2>Site B (168 Street & 20th Ave Area) Details</h2>
+        <p>
+          For this site, it will significantly disrupt the amount of trees and
+          nature there. The demolition of the natural fields surrounding the
+          area will impact the environment. However, for all secondary schools
+          and construction projects in general, a positive is that secondary
+          schools can ensure that the surrounding area is taken care of (parks,
+          fields, trees, etc.)
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Many of the environment risks, hazards, and damages are standard to
+          all construction projects, and many of these effects are temporary and
+          minimal, having that environmental damages are shown to be minimized
+          over a long-term period. The City of Surrey stands by its commitment
+          to decrease the environment risks, hazards, and damages for all of its
+          construction projects, and its plan for Bolivar Park Secondary is
+          outlined below:
+        </p>
+        <h3>Reduce Noise</h3>
+        <p>
+          Surrey recognizes that construction noise is a major source of noise
+          pollution. Most of this is produced by machinery in site preparation,
+          demolition, and landscaping. In residential areas, construction sites
+          can often cause complaints or reports from nearby homes. When
+          beginning the Bolivar Park Secondary project, Surrey commits to
+          adhering to all local construction time restrictions. The City of
+          Surrey will also publish a schedule and noise report for those
+          affected.
+        </p>
+        <h3>Efficient Waste Disposal</h3>
+        <p>
+          In Canada, demolition waste makes up 90% of total debris, and this
+          waste is disposed of in landfills or through incineration. The
+          construction project commits to salvaging, reusing and recycling
+          existing materials,cutting down on materials harming the environment
+          Additionally, Hardware, appliances, and fixtures will be largely
+          recycled or reused.
+        </p>
+        <h3>Renewable Technology Innovation</h3>
+        <p>
+          The City of Surrey uses inflatable water dams, which help combat
+          erosion, water runoff, and prevents sedimentation. Sandbags and
+          traditional dewatering solutions have proven to be costly and
+          time-consuming. New inflatable water dams are reusable and take up
+          little space, and are easier to install and environmentally friendly.
+        </p>
+        The City of Surrey also has expediting construction completion and
+        preperation, which will help speed the process.
+      </div>
+      <div id="quizzes" style="display: none">
+        <h1 class="content-title">ECONOMY</h1>
+        <p>
+          Cnstructing a school on a large, open land will be the most
+          economically beneficial plan. In the site of Bolivar Park, Aside from
+          the open swaths of dog park or the large forested area, there are the
+          large sites such as the baseball fields or the other amenities. These
+          will cost significantly as the demolition costs will be higher
+          (existing equipment). The City of Surrey already owns the rights to
+          the park land, so demolition will not have huge impacts on the cost or
+          legal costs. However, cutting out a large site on the intersection of
+          168 and 20th street will require a lot of buying up properties, a
+          large economic impact. Additionally, secondary school maintenance
+          costs are significant, including water, electricity, salary payment,
+          renovation costs, etc. Citizen livelihoods also depend on the location
+          of their home, so this will be affected if the government pressures
+          people in selling their home, only later to realize it was an
+          undesirable decision. Because of the above factors, an empty
+          construction site will almost certainly be preferred over building
+          over existing properties. Adding to the economic impact, a school
+          built in any location will attract a huge number of jobs and economic
+          opportunities for the businesses nearby. The economical impacts are
+          also influenced by how many people live surrounding the chosen site.
+          Although more people live near Site B, the existence of another
+          secondary school near this site, Grandview Heightse Secondary, reduces
+          the economic potential. Overall, the negative economic impacts of
+          school construction is outweighed by the economic opportunities and
+          employment presented by a large secondary school. The maintainance
+          costs are balanced by the overall positive growth from employment and
+          contracts.
+        </p>
+        <h2>Quick Stats</h2>
+        <p>
+          According to various similar construction projects, the following
+          statistics are estimated. The City of Surrey has seven major, ongoing
+          school sites currently, so other projects are factored in as well.
+        </p>
+        <ul>
+          <li>
+            Construction of the seven new school buildings on the regional
+            economy for the Greater Vancouver Area is estimated to generate a
+            total of $258.3 million in sales, 1,944 jobs, $92 million in labor
+            income, and $4.5 million in state and local sales and income tax
+            revenues over the 30-month span of the construction project.
+          </li>
+          <li>
+            New jobs are estimated to generate $33.2 million in labor income.
+            New building construction is also estimated to generate nearly $1.3
+            million in state and local sales and income tax revenues.
+          </li>
+          <li>
+            Overall, more than 1,500 new jobs are expected to arise from
+            construction and the secondary school.
+          </li>
+        </ul>
+        <img
+          src="/images/economy-table.png"
+          alt="An image of a table"
+          style="width: 50%"
+        />
+        <p>
+          <i
+            >Above: expected results from a similar project conducted in the
+            United States.</i
+          >
+        </p>
+      </div>
+      <div id="politics" style="display: none">
+        <h1 class="content-title">POLITICAL</h1>
+        <p>
+          Building this secondary school will mean more education, higher
+          community satisfaction. There are different political factors for each
+          of the two proposed sites.
+        </p>
+        <h2>Site A (Bolivar Park) Details</h2>
+        <p>
+          The government will have to get a building permit in or near the park
+          in order to construct the school and move on to the other processes.
+          Since the government already has many of the rights/permits required
+          for the park, this factor will be much easier to streamline and go
+          through. However, the construction process itself will be more
+          difficult to go through than in a residential area with free space, as
+          significant permits will be required in order to excavate and
+          construct the already existing park space. The government will have to
+          provide an alternative space to important facilities and areas, such
+          as the dog park or the washrooms nearby.
+        </p>
+        <h2>Site B (168 Street & 20th Ave Area) Details</h2>
+        <p>
+          The field is extremely easy to get a permit for, as empty spaces are
+          usually simpler than already existing properties to construct on.
+          Other processes follow as above.
+        </p>
+        <p>
+          The BC Regional Services building permit process currently is as
+          follows:
+        </p>
+        <blockquote>
+          <h2>Building Permits may be issued when:</h2>
+          <ul>
+            <li>
+              The proposed work substantially conforms with the current building
+              code, building bylaw and any other applicable bylaws or zoning
+              regulations
+            </li>
+            <li>All the fees are paid</li>
+            <li>The owner has retained a professional engineer if required</li>
+            <li>The owner has retained an architect if required</li>
+            <li>The owner has retained a BCLS survey if required</li>
+            <li>The owner has been granted DP/DVP/BOV if required</li>
+          </ul>
+        </blockquote>
+        <p>
+          After all of these processes have been followed, other political
+          factors are less immediate.
+        </p>
+      </div>
+      <div id="social" style="display: none">
+        <h1 class="content-title">SOCIAL</h1>
+        <h2>Site B (168 Street & 20th Ave Area) Details</h2>
+        <p>
+          One of the most important factors in school construction is placement;
+          specifically, where to maximize the amount of reach. This is extremely
+          important as school constructions are a tedious and expensive process,
+          so we want to maximize the output from these schools. There are no
+          open fields extremely close to the intersection of 168 and 20th street
+          - the nearest one is pictured below.
+        </p>
+        <img
+          src="/images/One-sixty-eight3.png"
+          alt="An image of a field"
+          style="width: 50%"
+        />
+        <p>
+          Note how Grandview Heights Secondary School is only a few blocks away
+          from this optimal site. This makes this site almost immediately not
+          available for consideration as two extremely close by secondary
+          schools are redundant, especially considering the quality and expenses
+          of Grandview Secondary. Although this site is not the only proposed
+          construction site, it is far too close to another high-quality
+          secondary school to consider building such a large-scale project. This
+          social factor makes this zone a suboptimal place to construct.
+        </p>
+        <h2>Site A (Bolivar Park) Details</h2>
+        <p>
+          On the contrary, take a look at Bolivar Park and its surrounding area.
+          There are no secondary schools in the area. This shows that the money
+          and construction invested in the project would best benefit this area,
+          of which its large population is not best served without a secondary
+          school. Other than the specific site benefits, secondary schools are
+          an essential part of a growing community. Surrey's community is
+          growing faster than ever, so a secondary school would benefit the
+          overall community happiness, education, and social services. Overall,
+          if constructed, managed, and maintained properly, the economic and
+          political downsides would be outweighed by the strong social and some
+          physical factors.
+        </p>
+      </div>
+      <div id="conclusion" style="display: none">
+        <h1 class="content-title">CONCLUSION</h1>
+        <p class="content-text">
+          The City of Surrey's construction of Bolivar Park Secondary has yet to
+          have a start date, as the proposals have just been finalized. However,
+          our analysis of the two major proposals has brought a clear choice, of
+          which that is Bolivar Park. A combination of all of the above factors
+          have led to this decision. All five factors are listed below.
+        </p>
+        <h2>Geography</h2>
+        <img
+          src="/images/Bolivar.png"
+          alt="A Google Earth image of a park"
+          style="width: 34%"
+        />
+        <img
+          src="/images/One-sixty-eight.png"
+          alt="A Google Earth image of streets"
+          style="width: 25%"
+        />
+        <p>
+          Geographically, both sites were deemed to be in good condition for
+          construction. However, slightly more choice was given to Bolivar Park,
+          as there is more empty forestry to construct on.
+        </p>
+        <h2>Environment</h2>
+        <p>
+          Ignoring which site is chosen, the construction process will have an
+          environmental impact customary for every construction. The City of
+          Surrey has outlined a plan to minimize the environmental risks, as
+          shown in the "Environment" tab.
+        </p>
+        <h2>Economy</h2>
+        <p>
+          This factor is independent of which site is chosen, but Bolivar Park
+          is more beneficial towards the economy as a site. This is because
+          attendance rates will be higher, because of the lack of another
+          secondary school around the site.
+        </p>
+        <h2>Political</h2>
+        <p>
+          Building permits will be easier to obtain at Bolivar Park, because of
+          the inherent government rights to the land. Attached in the
+          corresponding tab is the set of steps in order to obtain a permit, for
+          reference.
+        </p>
+        <h2>Social</h2>
+        <p>
+          Although most factors leading up to this have been fairly close,
+          ultimately, the deciding factor is Social. The simple existence of
+          another high-quality secondary school near Site B means that the
+          construction effort and money would be of a lesser impact compared to
+          building a secondary school in a district where there is not another.
+          Thus, Bolivar Park is the clear choice for the social factor.
+        </p>
+      </div>
+      <div id="elements-of-form-and-style" style="display: none">
+        <h1 class="content-title">GEOGRAPHY</h1>
+        <h2>Geographical analysis</h2>
+        <p>
+          The City of Surrey has conducted an analysis of the geographical
+          factors concerning the two proposed sites.
+        </p>
+        <h2>Site A (Bolivar Park) Details</h2>
+        <ul>
+          <li>Address: 13591 Crestview Drive, Surrey BC</li>
+          <li>
+            Large area with many different activity sites including multiple
+            baseball fields, a field house and washroom building, playground,
+            and many picnic tables
+          </li>
+          <li>
+            In the south and east part of the park there is a large forested
+            area with multiple forest trails
+          </li>
+          <li>
+            Some of these areas offer highly esteemed views of New Westminster
+            and the Fraser River
+          </li>
+          <li>
+            Includes a two-acre fenced dog off-leash area - mostly open field
+            grass
+          </li>
+        </ul>
+        <img
+          src="/images/Bolivar2.png"
+          alt="An image of a park"
+          style="width: 50%"
+        />
+        <p>
+          Bolivar Park is an extremely large area with a large amount of empty
+          space, and large swaths of forested plains. Construction sites are
+          optimal in many of these areas geographically.
+        </p>
+        <h2>Site B (168 Street & 20th Ave Area) Details</h2>
+        <ul>
+          <li>
+            This intersection is unique in that this is the only intersection of
+            two roads in the surrounding area
+          </li>
+          <li>This area is rather sparse in terms of roads</li>
+          <li>
+            Mostly residential housing, with large farmland plains in between,
+            suitable for construction
+          </li>
+          <li>
+            Streets criss-cross to form an extremely large plain in the middle
+          </li>
+        </ul>
+        <img
+          src="/images/One-sixty-eight2.png"
+          alt="An image of a field"
+          style="width: 50%"
+        />
+        <p>
+          This specific area surrounding the intersection of 168 Street & 20th
+          Ave is mostly residential area. However, there are large plains that
+          are suitable for construction, so there are no major issues in this
+          factor.
+        </p>
+        <h2>Conclusion</h2>
+        <p>
+          Both sites feature suitable areas for construction. Geographically,
+          both sites are also fairly well-suited for demolition and the
+          following processes, so no large concerns arise here.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <h3>Bolivar Park Secondary Project</h3>
+      <a
+        class="footer-button"
+        href="mailto:ddai@southridge.bc.ca"
+        target="_blank"
+        >Contact Us</a
+      >
+      <a
+        class="footer-button"
+        href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+        target="_blank"
+        >Terms of Service</a
+      >
+      <a
+        class="footer-button"
+        href="https://www.youtube.com/watch?v=oHg5SJYRHA0"
+        target="_blank"
+        >Privacy</a
+      >
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>
