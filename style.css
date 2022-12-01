@@ -5,12 +5,12 @@ body {
 
 @font-face {
   font-family: Univers;
-  src: url("/univers/UniversRegular.ttf");
+  src: url("univers/UniversRegular.ttf");
 }
 
 @font-face {
   font-family: Univers-Bold;
-  src: url("/univers/UniversBold.ttf");
+  src: url("univers/UniversBold.ttf");
 }
 
 .logo-text {
